@@ -18,6 +18,12 @@ html {
   @media (max-width: 67.5em) {
     html {
       font-size: 50%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 37.5%; } }
+  @media (max-width: 40em) {
+    html {
+      font-size: 30%; } }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -50,9 +56,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 50em) {
+    .nav-box {
+      height: 15vh; } }
+  @media (max-width: 40em) {
+    .nav-box {
+      height: 10vh;
+      position: relative; } }
   .nav-box__account {
     margin: 0 3rem;
     flex: 1; }
+    @media (max-width: 50em) {
+      .nav-box__account {
+        align-self: flex-start;
+        flex: .4; } }
+    @media (max-width: 40em) {
+      .nav-box__account {
+        align-self: center;
+        flex: .2; } }
   .nav-box__links:link, .nav-box__links:visited, .nav-box__link:link, .nav-box__link:visited {
     display: inline-block;
     font-size: 1.2rem;
@@ -92,16 +113,34 @@ body {
     display: flex;
     flex: 3;
     justify-content: space-between; }
+    @media (max-width: 40em) {
+      .nav-box__list {
+        display: none; } }
   .nav-box__checkout {
     flex: 1;
     margin: 0 3rem;
     display: flex;
     justify-content: flex-end; }
+    @media (max-width: 50em) {
+      .nav-box__checkout {
+        align-self: flex-start;
+        flex: .4; } }
+    @media (max-width: 40em) {
+      .nav-box__checkout {
+        align-self: center;
+        flex: .2; } }
   .nav-box__icon {
     width: 1.25rem;
     height: 1.25rem;
     vertical-align: middle;
     margin: -.3rem 1px 0 0; }
+    @media (max-width: 50em) {
+      .nav-box__icon {
+        width: 2.5rem;
+        height: 2.5rem; } }
+  @media (max-width: 50em) {
+    .nav-box__text {
+      display: none; } }
 
 .edit:link,
 .edit:visited {
@@ -141,6 +180,13 @@ body {
     margin-top: 3rem; }
     .banner__box:hover {
       background-color: var(--color-white); }
+      @media (max-width: 40em) {
+        .banner__box:hover {
+          display: none; } }
+    @media (max-width: 40em) {
+      .banner__box {
+        background-color: var(--color-white);
+        color: #000; } }
   .banner__btn:link, .banner__btn:visited {
     display: inline-block;
     font-size: 1.45rem;
@@ -149,6 +195,9 @@ body {
     text-decoration: none;
     position: relative;
     color: var(--color-white); }
+    @media (max-width: 40em) {
+      .banner__btn:link, .banner__btn:visited {
+        color: var(--color-primary); } }
   .banner__btn::after {
     content: "\203A";
     display: inline-block;
@@ -158,14 +207,23 @@ body {
     position: absolute;
     top: -.8rem;
     right: .5rem; }
+    @media (max-width: 40em) {
+      .banner__btn::after {
+        top: -.4rem; } }
   .banner__btn:hover {
     color: var(--color-primary); }
+    @media (max-width: 40em) {
+      .banner__btn:hover {
+        display: none; } }
 
 .category__title {
   display: inline-block;
   width: 80%;
   margin: 3rem auto 5rem 0;
   text-align: center; }
+  @media (max-width: 40em) {
+    .category__title {
+      width: 65%; } }
 
 .category__photo {
   display: block;
@@ -176,9 +234,15 @@ body {
   .category__photo--big {
     width: 80%;
     height: auto; }
+    @media (max-width: 40em) {
+      .category__photo--big {
+        width: 70%; } }
   .category__photo--small {
     width: 80%;
     height: auto; }
+    @media (max-width: 40em) {
+      .category__photo--small {
+        width: 70%; } }
   .category__photo:hover {
     filter: brightness(110%); }
 
@@ -256,6 +320,13 @@ body {
   letter-spacing: 5px;
   display: flex;
   justify-content: center; }
+  @media (max-width: 40em) {
+    .header__logo {
+      padding: 1.5rem 0 0 0;
+      width: 40%;
+      position: absolute;
+      top: 0;
+      left: 30%; } }
 
 .banner {
   background-image: url(/img/home-header.jpg);
@@ -263,6 +334,9 @@ body {
   height: 85vh;
   width: auto;
   position: sticky; }
+  @media (max-width: 40em) {
+    .banner {
+      height: 60vh; } }
 
 .section-categories {
   padding: 8rem 0;
@@ -274,6 +348,10 @@ body {
   max-width: 95vw;
   display: flex;
   margin: 3rem 0 -4rem 7rem; }
+  @media (max-width: 40em) {
+    .category__container {
+      max-width: 80vw;
+      margin: 5rem 0 -4rem 11rem; } }
 
 .section-video-ad {
   height: 80vh;

@@ -1,6 +1,10 @@
 @mixin for-size($size) {
     @if $size == phone {
-        @media (max-width:25em) { @content; }
+        @media (max-width:40em) { @content; }
+    }
+
+    @if $size == tab-port-2 {
+        @media (max-width:50em) { @content; }
     }
 
     @if $size == tab-port {

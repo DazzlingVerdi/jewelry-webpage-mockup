@@ -7,9 +7,32 @@
     justify-content: space-between;
     align-items: center;
 
+    //MEDIA QUERY //// 
+    @include for-size(tab-port-2) {
+        height:15vh;
+    }
+
+    //MEDIA QUERY //// 
+    @include for-size(phone) {
+        height:10vh;
+        position: relative;
+    }
+
     &__account {
         margin:0 3rem;
         flex:1;
+
+         //MEDIA QUERY //// 
+         @include for-size(tab-port-2) {
+            align-self: flex-start;
+            flex:.4;
+         }
+
+         //MEDIA QUERY //// 
+         @include for-size(phone) {
+             align-self: center;
+             flex:.2;
+         }
 
     }
 
@@ -74,6 +97,11 @@
         display: flex;
         flex:3;
         justify-content: space-between;
+
+        //MEDIA QUERY //// 
+        @include for-size(phone) {
+            display: none;
+        }
        
     }
 
@@ -84,6 +112,18 @@
 
         display: flex;
         justify-content: flex-end;
+
+        //MEDIA QUERY //// 
+        @include for-size(tab-port-2) {
+            align-self: flex-start;
+            flex:.4;
+         }
+
+         //MEDIA QUERY //// 
+         @include for-size(phone) {
+             align-self: center;
+            flex:.2;
+        }
        
 
     }
@@ -94,6 +134,20 @@
         vertical-align: middle;
         margin:-.3rem 1px 0 0;
 
+        //MEDIA QUERY //// 
+        @include for-size(tab-port-2) {
+            width:2.5rem;
+            height:2.5rem;
+        }
+
+    }
+
+    &__text {
+
+        //MEDIA QUERY //// 
+         @include for-size(tab-port-2) {
+             display: none;
+         }
     }
 }
 
@@ -148,6 +202,17 @@
 
         &:hover {
             background-color: var(--color-white);
+
+            //MEDIA QUERY //// 
+            @include for-size(phone) {
+                display: none;
+            }
+        }
+
+        //MEDIA QUERY //// 
+        @include for-size(phone) {
+            background-color: var(--color-white);
+            color:#000;
         }
     }
 
@@ -161,6 +226,11 @@
            text-decoration: none;
            position: relative;
            color:var(--color-white);
+
+           //MEDIA QUERY //// 
+           @include for-size(phone) {
+               color:var(--color-primary);
+           }
         }
 
         &::after {
@@ -172,10 +242,20 @@
             position: absolute;
             top:-.8rem;
             right:.5rem;
+
+            //MEDIA QUERY //// 
+            @include for-size(phone) {
+                top:-.4rem;
+            }
         } 
 
         &:hover {
             color: var(--color-primary);
+
+            //MEDIA QUERY //// 
+            @include for-size(phone) {
+                display: none;
+            }
         }
 
     }
@@ -184,13 +264,16 @@
 // CATEGORY SECTION ///////
 .category {
 
-
- 
     &__title {
         display: inline-block;
         width:80%;
         margin:3rem auto 5rem 0;
         text-align: center;
+
+        //MEDIA QUERY //// 
+        @include for-size(phone) {
+            width:65%;
+        }
     }
 
     &__photo {
@@ -205,11 +288,22 @@
             width:80%;
             height:auto;
 
+            //MEDIA QUERY //// 
+            @include for-size(phone) {
+                width: 70%;
+
+            }
+
         }
 
         &--small {
             width:80%;
             height: auto;
+
+            //MEDIA QUERY //// 
+            @include for-size(phone) {
+                width:70%;
+            }
 
         }
 
