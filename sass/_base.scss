@@ -1,0 +1,53 @@
+:root {
+    --color-primary:#000;
+    --color-white:#fff;
+
+    --color-grey-light:#ddd;
+
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &::after {
+        display: block;
+        content:"";
+        width:20px;
+        height:2px;
+        background-color: var(--color-primary);
+        margin: .5rem auto 0 auto;
+    }
+}
+
+.heading-four {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
