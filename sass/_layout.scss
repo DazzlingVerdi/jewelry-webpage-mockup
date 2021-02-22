@@ -19,7 +19,11 @@
             position: absolute;
             top:0;
             left:30%;
-          
+       }
+
+        //MEDIA QUERY //// 
+       @include for-size(small-phones) {
+            top:1rem;
        }
        
    }
@@ -35,8 +39,12 @@
     //MEDIA QUERY //// 
     @include for-size(phone) {
         height:60vh;
-
     }
+
+    //MEDIA QUERY //// 
+    @include for-size(small-phones) {
+        height:50vh;
+     }
 }
 
 // SECTION CATEGORIES ///////////
@@ -61,6 +69,11 @@
         margin:5rem 0 -4rem 11rem;
     }
 
+    //MEDIA QUERY //// 
+    @include for-size(small-phones) {
+        margin-left:9rem;
+    }
+
 }
 
 // SECTION BG VIDEO /////////// 
@@ -71,5 +84,23 @@
 
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    //MEDIA QUERY //// 
+    @include for-size(small-phones) {
+        height:50vh;
+       
+    }
+}
+
+// SECTION FEATURE /////////// 
+.section-feature {
+    padding: 8rem 0 25rem 0;
+    background-color: var(--color-grey-light-1);
+
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }

@@ -3,6 +3,7 @@
     --color-white:#fff;
 
     --color-grey-light:#ddd;
+    --color-grey-light-1:#eee;
 
 }
 
@@ -32,6 +33,10 @@ html {
 
     @include for-size(phone) {
         font-size: 30%;
+    }
+
+    @include for-size(small-phones) {
+        font-size: 20%;
     }
 
     
@@ -65,6 +70,11 @@ body {
     letter-spacing: 1px;
     font-weight: 400;
     margin-bottom: 1.5rem;
+}
+
+.heading-secondary {
+    font-weight: 400;
+    font-size: 1.6rem;
 }
 
 

@@ -1,4 +1,8 @@
 @mixin for-size($size) {
+    @if $size == small-phones {
+        @media (max-width:25em) { @content; }
+    }
+
     @if $size == phone {
         @media (max-width:40em) { @content; }
     }
