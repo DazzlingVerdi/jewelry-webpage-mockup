@@ -4,8 +4,10 @@
 
     --color-grey-light:#ddd;
     --color-grey-light-1:#eee;
+    --color-grey-light-2:#999;
 
 }
+
 
 * {
     margin:0;
@@ -73,8 +75,18 @@ body {
 }
 
 .heading-secondary {
+    font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 1.6rem;
+}
+
+.heading-fifth {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3rem;
+    letter-spacing: 2px;
+
 }
 
 

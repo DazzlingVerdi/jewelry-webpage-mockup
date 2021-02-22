@@ -1,7 +1,5 @@
 .header {
 
-    
-    
    &__logo {
        font-size: 4rem;
        font-weight: 400;
@@ -95,7 +93,7 @@
 
 // SECTION FEATURE /////////// 
 .section-feature {
-    padding: 8rem 0 25rem 0;
+    padding: 8rem 0;
     background-color: var(--color-grey-light-1);
 
 
@@ -104,3 +102,17 @@
     flex-direction: column;
     align-items: center;
 }
+
+// SECTION FOOTER /////////// 
+.footer {
+    padding:3rem 4rem;
+
+    &__logo {
+        font-size: 2rem;
+        justify-content: flex-start;
+    }
+
+    
+}
+
+

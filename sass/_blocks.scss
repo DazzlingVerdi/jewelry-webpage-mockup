@@ -526,3 +526,134 @@
 
     }
 }
+
+// FOOTER //// 
+.footer {
+
+    &__container {
+  
+        display: flex;
+        justify-content: space-between;
+        margin-top:3rem;
+    }
+
+    &__list {
+        flex:1;
+        list-style: none;
+    }
+
+    &__item {
+        margin-top:1rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: .1rem;
+            color: #777777ce;
+            border-bottom: 1px solid transparent;
+            transition: all .2s ease-in;
+        }
+
+        &:hover,
+        &:active {
+            color: var(--color-primary);
+            border-bottom: 1px solid #000;
+        }
+
+        // Links with no border bottom (nb) //// 
+        &--nb:link,
+        &--nb:visited {
+            border-bottom:transparent;
+        }
+
+        &--nb:hover,
+        &--nb:active {
+            border-bottom:transparent;
+        }
+    }
+
+    &__img {
+        display: block;
+        width:38%;
+
+        &--2 {
+            width:35%;
+        }
+    }
+}
+
+
+.input-box {
+    
+    display: flex;
+    flex:2;
+    flex-direction: column;
+    align-items: center;
+
+    &__wrap {
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__field {
+        padding:1rem 2rem;
+        width:80%;
+        border:none;
+        border:1px solid var(--color-grey-light);
+
+        &:focus {
+            outline:none;
+        }
+
+        &::-webkit-input-placeholder {
+            color:var(--color-grey-light-2);
+        }
+    }
+
+    &__img {
+        margin-top:2rem;
+        width:100%;
+    }
+    
+}
+
+// SIGN UP BUTTON //// 
+.btn-sign-up {
+    width:30%;
+    padding:1.3rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    border:1px solid var(--color-primary);
+    cursor: pointer;
+    transition: all .2s;
+
+    &:focus {
+        outline:none;
+    }
+
+    &:hover,
+    &:active {
+        color: var(--color-primary);
+        background-color: var(--color-white);
+        
+    }
+}
+
+// COPYRIGHT //// 
+.copyright {
+    text-align: center;
+    margin-top:5rem;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+}
