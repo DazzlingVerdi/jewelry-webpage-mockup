@@ -18,5 +18,8 @@
     @if $size == tab-land {
         @media (max-width:67.5em) { @content; }
     }
-   
+}
+
+@mixin transition {
+    transition: all .2s ease-in;
 }

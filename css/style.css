@@ -3,7 +3,9 @@
   --color-white:#fff;
   --color-grey-light:#ddd;
   --color-grey-light-1:#eee;
-  --color-grey-light-2:#999; }
+  --color-grey-light-2:#999;
+  --color-grey-dark-1: #4e4e4e;
+  --color-grey-dark-2:#777777ce; }
 
 * {
   margin: 0;
@@ -70,6 +72,7 @@ body {
 .nav-box {
   height: 8vh;
   padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-grey-dark-2);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -125,11 +128,15 @@ body {
   .nav-box__item:hover::before {
     transform: scaleX(1);
     width: 100%; }
+  .nav-box__item:hover .popup__container-1 {
+    opacity: 1;
+    visibility: visible; }
   .nav-box__list {
     list-style: none;
     display: flex;
     flex: 3;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative; }
     @media (max-width: 40em) {
       .nav-box__list {
         display: none; } }
@@ -312,6 +319,20 @@ body {
     .category__btn-icon::before {
       top: -1.1rem; } }
 
+.category__btn-popup:link, .category__btn-popup:visited {
+  color: var(--color-grey-dark-2) !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  transition: all .2s ease-in; }
+
+.category__btn-popup:hover, .category__btn-popup:active {
+  color: var(--color-primary) !important; }
+
+.category__btn-icon--popup::before {
+  font-size: 2rem;
+  top: -.8rem;
+  right: -1.2rem; }
+
 .shop-link {
   border: 1px solid var(--color-primary);
   display: inline-block; }
@@ -411,7 +432,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: .1rem;
-  color: #777777ce;
+  color: var(--color-grey-dark-2);
   border-bottom: 1px solid transparent;
   transition: all .2s ease-in; }
 
@@ -424,6 +445,12 @@ body {
 
 .footer__link--nb:hover, .footer__link--nb:active {
   border-bottom: transparent; }
+
+.footer__link-popup:link, .footer__link-popup:visited {
+  color: var(--color-grey-dark-1); }
+
+.footer__link-popup:hover, .footer__link-popup:active {
+  color: var(--color-primary); }
 
 .footer__img {
   display: block;
@@ -476,6 +503,27 @@ body {
   margin-top: 5rem;
   font-size: 1rem;
   font-family: 'Playfair Display', serif; }
+
+.popup__container-1 {
+  padding: 2rem 3rem;
+  width: 100vw;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-grey-dark-2);
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 1rem;
+  left: -29rem;
+  z-index: 200;
+  transition: all .2s ease-in; }
+
+.popup__video-box {
+  width: 95%; }
+
+.popup__video-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 .header__logo {
   font-size: 4rem;
@@ -557,3 +605,12 @@ body {
 
 .mb-small-2x {
   margin-bottom: 2rem; }
+
+.mt-small {
+  margin-top: 1rem; }
+
+.mt-small-2x {
+  margin-top: 2rem; }
+
+.mt-small-3x {
+  margin-top: 3rem; }
