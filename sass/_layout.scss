@@ -102,6 +102,11 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+    //MEDIA QUERY //// 
+    @include for-size(tab-land) {
+        padding:5rem 0;
+    }
 }
 
 // SECTION FOOTER /////////// 
@@ -111,6 +116,18 @@
     &__logo {
         font-size: 2rem;
         justify-content: flex-start;
+    }
+
+     //MEDIA QUERY //// 
+     @include for-size(tab-land) {
+        padding:2rem 3rem;
+    }
+
+     //MEDIA QUERY //// 
+     @include for-size(phone) {
+        position: relative;
+        height:85vh;
+        padding:2rem 4rem;
     }
 
     

@@ -504,6 +504,14 @@
 .feature {
     margin: 3rem 3rem 4.5rem 3rem;
     display: flex;
+    
+
+    //MEDIA QUERY //// 
+    @include for-size(phone) {
+        flex-wrap: wrap;
+        margin:3rem 0 0 0;
+        justify-content: center;
+    }
 
     &__box {
         @include transition;
@@ -511,10 +519,22 @@
 
         &:not(:last-child) {
             margin-right:3rem;
+
+             //MEDIA QUERY //// 
+              @include for-size(phone) {
+                margin-right:0;
+
+             }
         }
         
         &:hover {
             box-shadow: 0 2rem 2rem rgba(0,0,0, .4);
+        }
+
+        //MEDIA QUERY //// 
+        @include for-size(phone) {
+            width:55%;
+            margin-bottom:8rem; 
         }
 
     }
@@ -524,6 +544,16 @@
         width:100%;
         height:100%;
 
+         //MEDIA QUERY //// 
+         @include for-size(tab-land) {
+            height:80%;
+         }
+
+         //MEDIA QUERY //// 
+         @include for-size(tab-port) {
+             height:60%;
+         }
+
     }
 
     &__description {
@@ -532,6 +562,17 @@
         padding:3rem;
         background-color: var(--color-white);
         @include transition;
+
+        //MEDIA QUERY //// 
+        @include for-size(tab-port) {
+            padding:5rem;
+        }
+
+        //MEDIA QUERY //// 
+        @include for-size(phone) {
+            padding:7rem;
+        }
+
     }
 
     &__price {
@@ -561,6 +602,13 @@
         display: flex;
         justify-content: space-between;
         margin-top:3rem;
+
+         //MEDIA QUERY //// 
+         @include for-size(phone) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+       
     }
 
     &__list {
@@ -622,6 +670,19 @@
         &--2 {
             width:35%;
         }
+
+         //MEDIA QUERY //// 
+        @include for-size(tab-land) {
+           width:33%;
+       }
+    }
+
+    &__logo {
+         
+        //MEDIA QUERY //// 
+        @include for-size(phone) {
+            visibility: hidden;
+        }
     }
 }
 
@@ -632,6 +693,15 @@
     flex:2;
     flex-direction: column;
     align-items: center;
+
+    //MEDIA QUERY //// 
+    @include for-size(phone) {
+        display: block;
+        position: absolute;
+        bottom:8rem;
+        left:8rem;
+    }
+
 
     &__wrap {
         width:100%;
@@ -657,6 +727,16 @@
     &__img {
         margin-top:2rem;
         width:100%;
+
+        //MEDIA QUERY //// 
+        @include for-size(tab-port) {
+            width:80%;
+        }
+
+        //MEDIA QUERY //// 
+        @include for-size(phone) {
+            width:50%;
+        }
     }
     
 }
@@ -693,6 +773,13 @@
     margin-top:5rem;
     font-size: 1rem;
     font-family: 'Playfair Display', serif;
+
+    //MEDIA QUERY //// 
+    @include for-size(phone) {
+        position: absolute;
+        bottom:2rem;
+        left:37rem;
+    }
 }
 
 // POPUP CONTAINER //// 
