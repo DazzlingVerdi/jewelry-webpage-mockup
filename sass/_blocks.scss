@@ -14,8 +14,14 @@
 
     //MEDIA QUERY //// 
     @include for-size(phone) {
-        height:12vh;
+        height:10vh;
         position: relative;
+        border-bottom: 0;
+    }
+
+     //MEDIA QUERY //// 
+     @include for-size(small-phones) {
+        height:6vh;
     }
 
     &__account {
@@ -387,6 +393,11 @@
            @include for-size(phone) {
                top:-1.1rem;
           }
+
+          //MEDIA QUERY //// 
+          @include for-size(small-phones) {
+            top:-1.3rem;
+       }
         }
 
         // POPUP "SHOP" BUTTON STYLE ////
@@ -421,6 +432,7 @@
 
     &:hover {
         background-color: #000;
+
     }
     
 
@@ -445,7 +457,7 @@
 
             //MEDIA QUERY //// 
             @include for-size(small-phones) {
-                 top:.4rem;
+                 top:.9rem;
           }
         }
 
@@ -467,6 +479,7 @@
         width:100%;
         object-fit: cover;
     }
+
 }
 
 .watch-links {
@@ -513,6 +526,12 @@
         justify-content: center;
     }
 
+     //MEDIA QUERY //// 
+     @include for-size(small-phones) {
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__box {
         @include transition;
        
@@ -533,8 +552,13 @@
 
         //MEDIA QUERY //// 
         @include for-size(phone) {
-            width:55%;
+            width:53%;
             margin-bottom:8rem; 
+        }
+
+         //MEDIA QUERY //// 
+         @include for-size(small-phones) {
+            margin-bottom: 7rem;
         }
 
     }
@@ -554,6 +578,11 @@
              height:60%;
          }
 
+         //MEDIA QUERY //// 
+         @include for-size(small-phones) {
+            height:40%;
+        }
+
     }
 
     &__description {
@@ -563,15 +592,8 @@
         background-color: var(--color-white);
         @include transition;
 
-        //MEDIA QUERY //// 
-        @include for-size(tab-port) {
-            padding:5rem;
-        }
+       
 
-        //MEDIA QUERY //// 
-        @include for-size(phone) {
-            padding:7rem;
-        }
 
     }
 
@@ -592,6 +614,21 @@
         height:50vh;
         color: var(--color-primary);
 
+         //MEDIA QUERY //// 
+         @include for-size(tab-port) {
+            height:auto;
+        }
+
+        //MEDIA QUERY //// 
+        @include for-size(phone) {
+            height:auto;
+        }
+
+        //MEDIA QUERY //// 
+        @include for-size(small-phones) {
+            height:auto;
+        }
+
     }
 }
 
@@ -605,6 +642,12 @@
 
          //MEDIA QUERY //// 
          @include for-size(phone) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        //MEDIA QUERY //// 
+        @include for-size(small-phones) {
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -632,6 +675,12 @@
             color: var(--color-grey-dark-2);
             border-bottom: 1px solid transparent;
             @include transition;
+
+            //MEDIA QUERY //// 
+            @include for-size(small-phones) {
+                font-weight: 400;
+                font-size: 6px;
+            }
         }
 
         &:hover,
@@ -702,6 +751,11 @@
         left:8rem;
     }
 
+    //MEDIA QUERY //// 
+    @include for-size(small-phones) {
+       bottom:25rem;
+    }
+
 
     &__wrap {
         width:100%;
@@ -721,6 +775,11 @@
 
         &::-webkit-input-placeholder {
             color:var(--color-grey-light-2);
+
+            //MEDIA QUERY //// 
+            @include for-size(small-phones) {
+                font-size: 8px;
+            }
         }
     }
 
@@ -778,7 +837,14 @@
     @include for-size(phone) {
         position: absolute;
         bottom:2rem;
-        left:37rem;
+        left:50rem;
+    }
+
+    //MEDIA QUERY //// 
+    @include for-size(small-phones) {
+        position: absolute;
+        bottom:2rem;
+        left:33rem;
     }
 }
 

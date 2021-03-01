@@ -103,8 +103,14 @@ body {
 }
 @media (max-width: 40em) {
   .nav-box {
-    height: 12vh;
+    height: 10vh;
     position: relative;
+    border-bottom: 0;
+  }
+}
+@media (max-width: 25em) {
+  .nav-box {
+    height: 6vh;
   }
 }
 .nav-box__account {
@@ -410,6 +416,11 @@ body {
     top: -1.1rem;
   }
 }
+@media (max-width: 25em) {
+  .category__btn-icon::before {
+    top: -1.3rem;
+  }
+}
 .category__btn-popup:link, .category__btn-popup:visited {
   color: var(--color-grey-dark-2) !important;
   font-size: 1.1rem !important;
@@ -449,7 +460,7 @@ body {
 }
 @media (max-width: 25em) {
   .shop-link-btn::after {
-    top: 0.4rem;
+    top: 0.9rem;
   }
 }
 
@@ -501,6 +512,12 @@ body {
     justify-content: center;
   }
 }
+@media (max-width: 25em) {
+  .feature {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .feature__box {
   transition: all 0.2s ease-in;
 }
@@ -517,8 +534,13 @@ body {
 }
 @media (max-width: 40em) {
   .feature__box {
-    width: 55%;
+    width: 53%;
     margin-bottom: 8rem;
+  }
+}
+@media (max-width: 25em) {
+  .feature__box {
+    margin-bottom: 7rem;
   }
 }
 .feature__img {
@@ -536,22 +558,17 @@ body {
     height: 60%;
   }
 }
+@media (max-width: 25em) {
+  .feature__img {
+    height: 40%;
+  }
+}
 .feature__description {
   font-family: "Playfair Display", serif;
   text-align: center;
   padding: 3rem;
   background-color: var(--color-white);
   transition: all 0.2s ease-in;
-}
-@media (max-width: 56.25em) {
-  .feature__description {
-    padding: 5rem;
-  }
-}
-@media (max-width: 40em) {
-  .feature__description {
-    padding: 7rem;
-  }
 }
 .feature__price {
   font-size: 1.4rem;
@@ -566,6 +583,21 @@ body {
   height: 50vh;
   color: var(--color-primary);
 }
+@media (max-width: 56.25em) {
+  .feature__link {
+    height: auto;
+  }
+}
+@media (max-width: 40em) {
+  .feature__link {
+    height: auto;
+  }
+}
+@media (max-width: 25em) {
+  .feature__link {
+    height: auto;
+  }
+}
 
 .footer__container {
   display: flex;
@@ -573,6 +605,12 @@ body {
   margin-top: 3rem;
 }
 @media (max-width: 40em) {
+  .footer__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 25em) {
   .footer__container {
     flex-wrap: wrap;
     justify-content: center;
@@ -595,6 +633,12 @@ body {
   color: var(--color-grey-dark-2);
   border-bottom: 1px solid transparent;
   transition: all 0.2s ease-in;
+}
+@media (max-width: 25em) {
+  .footer__link:link, .footer__link:visited {
+    font-weight: 400;
+    font-size: 6px;
+  }
 }
 .footer__link:hover, .footer__link:active {
   color: var(--color-primary);
@@ -644,6 +688,11 @@ body {
     left: 8rem;
   }
 }
+@media (max-width: 25em) {
+  .input-box {
+    bottom: 25rem;
+  }
+}
 .input-box__wrap {
   width: 100%;
   display: flex;
@@ -660,6 +709,11 @@ body {
 }
 .input-box__field::-webkit-input-placeholder {
   color: var(--color-grey-light-2);
+}
+@media (max-width: 25em) {
+  .input-box__field::-webkit-input-placeholder {
+    font-size: 8px;
+  }
 }
 .input-box__img {
   margin-top: 2rem;
@@ -707,7 +761,14 @@ body {
   .copyright {
     position: absolute;
     bottom: 2rem;
-    left: 37rem;
+    left: 50rem;
+  }
+}
+@media (max-width: 25em) {
+  .copyright {
+    position: absolute;
+    bottom: 2rem;
+    left: 33rem;
   }
 }
 
@@ -753,7 +814,7 @@ body {
 }
 @media (max-width: 25em) {
   .header__logo {
-    top: 1rem;
+    top: 0;
   }
 }
 
@@ -762,16 +823,16 @@ body {
   background-size: cover;
   height: 85vh;
   width: auto;
-  position: sticky;
 }
 @media (max-width: 40em) {
   .banner {
     height: 60vh;
+    background-position: right;
   }
 }
 @media (max-width: 25em) {
   .banner {
-    height: 50vh;
+    height: 40vh;
   }
 }
 
@@ -807,9 +868,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 40em) {
+  .section-video-ad {
+    height: 60vh;
+  }
+}
 @media (max-width: 25em) {
   .section-video-ad {
-    height: 50vh;
+    height: 40vh;
   }
 }
 
@@ -824,6 +890,11 @@ body {
 @media (max-width: 67.5em) {
   .section-feature {
     padding: 5rem 0;
+  }
+}
+@media (max-width: 40em) {
+  .section-feature {
+    padding: 8rem 0;
   }
 }
 
@@ -842,7 +913,7 @@ body {
 @media (max-width: 40em) {
   .footer {
     position: relative;
-    height: 85vh;
+    height: 80vh;
     padding: 2rem 4rem;
   }
 }

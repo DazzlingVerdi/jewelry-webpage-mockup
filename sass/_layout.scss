@@ -22,7 +22,7 @@
 
         //MEDIA QUERY //// 
        @include for-size(small-phones) {
-            top:1rem;
+            top:0;
        }
        
    }
@@ -33,16 +33,17 @@
     background-size: cover;
     height:85vh;
     width:auto;
-    position: sticky;
+
 
     //MEDIA QUERY //// 
     @include for-size(phone) {
         height:60vh;
+        background-position: right;
     }
 
     //MEDIA QUERY //// 
     @include for-size(small-phones) {
-        height:50vh;
+        height:40vh;
      }
 }
 
@@ -86,10 +87,16 @@
     align-items: center;
 
     //MEDIA QUERY //// 
+    @include for-size(phone) {
+        height:60vh;
+     }
+
+    //MEDIA QUERY //// 
     @include for-size(small-phones) {
-        height:50vh;
+        height:40vh;
        
     }
+    
 }
 
 // SECTION FEATURE /////////// 
@@ -106,6 +113,11 @@
     //MEDIA QUERY //// 
     @include for-size(tab-land) {
         padding:5rem 0;
+    }
+
+    //MEDIA QUERY //// 
+    @include for-size(phone) {
+        padding:8rem 0;
     }
 }
 
@@ -126,7 +138,7 @@
      //MEDIA QUERY //// 
      @include for-size(phone) {
         position: relative;
-        height:85vh;
+        height:80vh;
         padding:2rem 4rem;
     }
 
