@@ -690,7 +690,7 @@ body {
 }
 @media (max-width: 25em) {
   .input-box {
-    bottom: 25rem;
+    bottom: 55rem;
   }
 }
 .input-box__wrap {
@@ -767,7 +767,7 @@ body {
 @media (max-width: 25em) {
   .copyright {
     position: absolute;
-    bottom: 2rem;
+    bottom: 20rem;
     left: 33rem;
   }
 }
@@ -784,6 +784,16 @@ body {
   left: -29rem;
   z-index: 200;
   transition: all 0.2s ease-in;
+}
+@media (max-width: 56.25em) {
+  .popup__container-1 {
+    left: -33rem;
+  }
+}
+@media (max-width: 50em) {
+  .popup__container-1 {
+    left: -20rem;
+  }
 }
 .popup__video-box {
   width: 95%;

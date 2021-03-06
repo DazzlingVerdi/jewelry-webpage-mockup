@@ -753,7 +753,7 @@
 
     //MEDIA QUERY //// 
     @include for-size(small-phones) {
-       bottom:25rem;
+       bottom:55rem;
     }
 
 
@@ -843,7 +843,7 @@
     //MEDIA QUERY //// 
     @include for-size(small-phones) {
         position: absolute;
-        bottom:2rem;
+        bottom:20rem;
         left:33rem;
     }
 }
@@ -862,6 +862,15 @@
         left:-29rem;
         z-index: 200;
         @include transition;
+
+        //MEDIA QUERY ///// 
+        @include for-size(tab-port){
+            left:-33rem;
+        }
+
+        @include for-size(tab-port-2){
+            left:-20rem;
+        }
     }
 
     &__video-box {
